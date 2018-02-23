@@ -1,7 +1,7 @@
 //
-//
 //  Created by Xalion on 25.01.2018.
 //  Copyright © 2018 Xalion. All rights reserved.
+//  Contact https://t.me/xalion
 //
 
 #include <stdio.h>
