@@ -1,9 +1,7 @@
 //
-//  genericPasscode.cpp
-//  code
-//
-//  Created by Парфенов Константин on 03.01.2018.
-//  Copyright © 2018 Парфенов Константин. All rights reserved.
+//  Created by Xalion on 03.01.2018.
+//  Copyright © 2018 Xalion. All rights reserved.
+//  Contact https://t.me/xalion
 //
 
 #include <iostream>
