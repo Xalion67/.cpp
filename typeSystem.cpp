@@ -1,9 +1,7 @@
 //
-//  main.cpp
-//  24
 //
-//  Created by Парфенов Константин on 25.01.2018.
-//  Copyright © 2018 Парфенов Константин. All rights reserved.
+//  Created by Xalion on 25.01.2018.
+//  Copyright © 2018 Xalion. All rights reserved.
 //
 
 #include <stdio.h>
