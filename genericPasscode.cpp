@@ -1,14 +1,14 @@
 //
-//  Created by Xalion on 03.01.2018.
-//  Copyright © 2018 Xalion. All rights reserved.
-//  Contact https://t.me/xalion
+//  genericPasscode.cpp
+//  code
+//
+//  Created by Парфенов Константин on 03.01.2018.
+//  Copyright © 2018 Парфенов Константин. All rights reserved.
 //
 
 #include <iostream>
-#include <ctime>
 #include <fstream>
 #include <vector>
-#include <cstdlib>
 
 std::vector<char> generatePass(unsigned short passLength) {
     
@@ -22,7 +22,7 @@ std::vector<char> generatePass(unsigned short passLength) {
         pass[i] = generatedSymbol;
     }
   
-    std::ofstream fout("/Users/Konstantin/Desktop/code/code/pass.txt");
+    std::ofstream fout("Your full address to file");
     
     for (short i = 0; i < passLength; i++) {
         fout << pass[i];
