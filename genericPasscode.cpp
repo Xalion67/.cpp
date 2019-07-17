@@ -1,33 +1,19 @@
-//
-//  genericPasscode.cpp
-//  code
-//
-//  Created by Парфенов Константин on 03.01.2018.
-//  Copyright © 2018 Парфенов Константин. All rights reserved.
-//
-
 #include <iostream>
-#include <fstream>
-#include <vector>
+#include <string>
+// If srand() and time() are undefined
+// Uncomment the bottom two lines
+//#include <cstdlib>
+//#include <ctime>
 
-std::vector<char> generatePass(unsigned short passLength) {
-    
+
+std::string generate_pass(unsigned short password_length) {
     srand(time(NULL));
-    
-    char generatedSymbol = 0;
-    std::vector<char> pass(passLength);
-    
-    for (short i = 0; i < passLength; i++) {
-        generatedSymbol = 65 + rand() % 25;
-        pass[i] = generatedSymbol;
+
+    std::string password;
+
+    for (short i = 0; i < password_length; i++) {
+        password += 33 + rand() % 93;
     }
-  
-    std::ofstream fout("Your full address to file");
-    
-    for (short i = 0; i < passLength; i++) {
-        fout << pass[i];
-    }
-    
-    fout.close();
-    return pass;
+
+    return password;
 }
